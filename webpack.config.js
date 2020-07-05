@@ -24,6 +24,8 @@ const config = {
   },
   plugins: [
     new WebpackPwaManifest({
+      fingerprints: false,
+      inject: false,
       name: "Online/Offline Budget Tracker",
       short_name: "Budget Tracker",
       description:
